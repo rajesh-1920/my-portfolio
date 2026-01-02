@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient(rgb(187, 223, 253),#ffffff);
+  background-repeat: no-repeat;
+}
+
+header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(0, 140, 255);
+  padding: 0px 3vw;
+}
+
+.nav-logo {
+  align-self: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap:2px;
+}
+.nav-logo-image {
+  border: 1px solid black;
+  height: 80%;
+  width: 48px;
+  border-radius: 50%;
+  background-image: url("./logo-icon.jpg");
+  background-size: cover;
+}
+#name{
+  font-weight: 550;
+  color: rgb(9, 10, 2);
+}
+
+nav {
+  width: 80%;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(0, 17, 255);
+  border: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 7px 20px;
+  background-color: rgb(251, 255, 0);
+  color: #000399;
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px rgba(246, 250, 18, 0.5);
+  font-weight: 600;
+}
+
+#nav-left {
+  width: 60px;
+  height: 60px;
+  border-bottom-left-radius: 100%;
+  background-color: rgb(0, 17, 255);
+  border: none;
+  box-shadow: -5px 5px 8px rgba(10, 10, 0, 0.2);
+}
+
+#nav-right {
+  width: 60px;
+  height: 60px;
+  border-bottom-right-radius: 100%;
+  background-color: rgb(0, 17, 255);
+  border: none;
+  box-shadow: 5px 5px 8px rgba(10, 10, 0, 0.2);
+}
+
+.hire-btn {
+  align-self: center;
+  padding: 7px 20px;
+  background-color: rgb(11, 47, 78);
+  border-radius: 5px;
+}
+
+.hire-btn a {
+  text-decoration: none;
+  color: rgb(200, 253, 149);
+  font-weight: 600;
+}
