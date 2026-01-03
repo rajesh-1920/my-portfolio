@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body{
-  background: linear-gradient(rgb(187, 223, 253),#ffffff);
+body {
+  background: linear-gradient(rgb(187, 223, 253), #ffffff);
   background-repeat: no-repeat;
 }
 
@@ -22,17 +22,16 @@ header {
   height: 100%;
   display: flex;
   align-items: center;
-  gap:2px;
+  gap: 2px;
 }
-.nav-logo-image {
+.nav-logo img {
   border: 1px solid black;
   height: 80%;
   width: 48px;
   border-radius: 50%;
-  background-image: url("./logo-icon.jpg");
   background-size: cover;
 }
-#name{
+#name {
   font-weight: 550;
   color: rgb(9, 10, 2);
 }
@@ -91,3 +90,78 @@ nav {
   color: rgb(200, 253, 149);
   font-weight: 600;
 }
+
+/* main */
+main {
+  padding: 0 3vw;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 50px 0px;
+}
+
+.hero .left {
+  width: 47%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero .left h1 {
+  color: rgb(37, 184, 12);
+  font-size: 3rem;
+}
+.hero .left p {
+  margin-top: 30px;
+  color: rgb(12, 48, 6);
+  font-size: 1.5rem;
+}
+
+.hero .left #name {
+  font-weight: 900;
+  font-size: 1.5em;
+  color: rgb(4, 4, 41);
+}
+
+.hero .left .btn {
+  padding: 10px 70px 10px 10px;
+  margin-top: 7vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.hero .left .btn button{
+  width: 30%;
+  height: 2rem;
+  border-radius: 5px;
+  color: wheat;
+  background-color: blue;
+}
+
+.hero .right {
+  margin-top: 30px;
+  width: 47%;
+  height: 75vh;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.hero .right img {
+  height: 65vh;
+  width: 60vh;
+  border-radius: 50%;
+  border: 5px solid rgb(24, 109, 129);
+  box-shadow: 5px 5px 10px rgba(10, 10, 0, 0.2);
+}
+.hero .right p {
+  font-weight: 700;
+  font-size: 40px;
+  color: blue;
+}
+/* hero end */
