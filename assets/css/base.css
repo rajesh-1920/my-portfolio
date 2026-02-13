@@ -600,3 +600,108 @@ textarea {
     background: var(--accent-primary);
     color: var(--bg-primary);
 }
+
+/* ===== LIGHT MODE SPECIFIC STYLES ===== */
+
+[data-theme="light"] ::-webkit-scrollbar-track {
+    background: #eef2f7;
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb {
+    background: rgba(37, 99, 235, 0.4);
+}
+
+[data-theme="light"] ::-webkit-scrollbar-thumb:hover {
+    background: rgba(37, 99, 235, 0.6);
+}
+
+[data-theme="light"] ::selection {
+    background: rgba(5, 150, 105, 0.2);
+    color: #111827;
+}
+
+/* Enhanced typography for light mode */
+[data-theme="light"] h1,
+[data-theme="light"] h2,
+[data-theme="light"] h3,
+[data-theme="light"] h4,
+[data-theme="light"] h5,
+[data-theme="light"] h6 {
+    color: #0f172a;
+    font-weight: var(--fw-extrabold);
+}
+
+[data-theme="light"] p {
+    color: var(--text-secondary);
+}
+
+[data-theme="light"] .text-muted {
+    color: #9ca3af;
+}
+
+[data-theme="light"] a:hover {
+    color: #047857;
+}
+
+[data-theme="light"] .skip-link {
+    background: var(--accent-primary);
+    color: white;
+}
+
+/* Button enhancements for light mode */
+[data-theme="light"] .btn-primary {
+    background: linear-gradient(135deg, #059669, #047857);
+    border-color: #059669;
+    color: white;
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25),
+                0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .btn-primary:hover {
+    box-shadow: 0 8px 20px rgba(5, 150, 105, 0.35),
+                0 4px 8px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+
+[data-theme="light"] .btn-outline {
+    border-color: #2563eb;
+    color: #2563eb;
+    background: rgba(37, 99, 235, 0.03);
+}
+
+[data-theme="light"] .btn-outline:hover {
+    background: rgba(37, 99, 235, 0.08);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1),
+                0 4px 12px rgba(37, 99, 235, 0.15);
+}
+
+[data-theme="light"] .btn-link {
+    color: #2563eb;
+}
+
+[data-theme="light"] .btn-link:hover {
+    background: rgba(37, 99, 235, 0.08);
+    color: #1d4ed8;
+}
+
+[data-theme="light"] .btn:disabled {
+    opacity: 0.4;
+    background: #e5e7eb;
+    border-color: #d1d5db;
+    color: #9ca3af;
+}
+
+/* Smooth transitions for theme switch */
+[data-theme="light"] * {
+    transition-property: background-color, border-color, color, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Preserve specific animations */
+[data-theme="light"] .typing-text,
+[data-theme="light"] .btn,
+[data-theme="light"] .card,
+[data-theme="light"] .skill-progress {
+    transition-duration: 0.3s;
+}
