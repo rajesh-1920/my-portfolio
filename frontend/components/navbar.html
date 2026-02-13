@@ -1,0 +1,58 @@
+<!-- 
+    Navbar Component Template
+    This is a reference template for the navigation bar component.
+    The actual navbar is integrated into index.html
+-->
+
+<nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-container">
+        <!-- Logo -->
+        <a href="#" class="navbar-logo">
+            <span class="logo-text">Rajesh</span><span class="logo-accent">.dev</span>
+        </a>
+        
+        <!-- Navigation Links -->
+        <div class="nav-menu">
+            <a href="#home" class="nav-link active" data-scroll>Home</a>
+            <a href="#about" class="nav-link" data-scroll>About</a>
+            <a href="#skills" class="nav-link" data-scroll>Skills</a>
+            <a href="#projects" class="nav-link" data-scroll>Projects</a>
+            <a href="#cp" class="nav-link" data-scroll>CP Stats</a>
+            <a href="#contact" class="nav-link" data-scroll>Contact</a>
+        </div>
+
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" aria-label="Toggle dark/light mode" id="theme-btn">
+            <span class="theme-icon">🌙</span>
+        </button>
+
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" id="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- 
+    FEATURES:
+    - Sticky positioning
+    - Smooth scroll navigation with Ctrl+Click or data-scroll attribute
+    - Active link highlighting based on scroll position
+    - Dark mode toggle with localStorage persistence
+    - Responsive mobile menu with hamburger button
+    - Glassmorphism background effect
+    - Accessible (aria-label, semantic HTML)
+    
+    JAVASCRIPT BEHAVIORS:
+    - Navigation.js: Handles smooth scrolling and active link updates
+    - Theme.js: Manages dark/light mode toggle
+    - Mobile menu toggle and close on link click
+    
+    CUSTOMIZATION:
+    - Change logo text: Update .logo-text and .logo-accent spans
+    - Add/remove nav links: Add/remove .nav-link elements with data-scroll attribute
+    - Adjust colors: Modify CSS variables in variables.css
+    - Change sticky position: Modify navbar height in variables.css
+-->
