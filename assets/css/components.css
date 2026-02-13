@@ -48,60 +48,60 @@
 /* Navigation Menu */
 .nav-menu {
     display: flex;
-    gap: var(--space-6);
+    gap: var(--space-4);
     align-items: center;
 }
 
 .nav-link {
-    color: var(--text-secondary);
+    color: var(--bg-primary);
+    background: var(--accent-primary);
     font-size: var(--fs-sm);
-    font-weight: var(--fw-medium);
+    font-weight: 700;
     letter-spacing: var(--ls-wide);
     text-transform: uppercase;
     position: relative;
-    transition: color var(--transition-fast);
+    transition: all var(--transition-fast);
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: 2px solid var(--accent-primary);
 }
 
 .nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
-    transition: width var(--transition-fast);
+    display: none;                           /* No underline effect */
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--accent-primary);
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-    width: 100%;
+    background: var(--accent-secondary);
+    border-color: var(--accent-secondary);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Theme Toggle Button */
 .theme-toggle {
-    background: transparent;
-    color: var(--text-primary);
-    border: 2px solid var(--border-color);
-    border-radius: var(--radius-full);
-    width: 40px;
-    height: 40px;
+    background: var(--bg-secondary);
+    color: white;
+    border: 2px solid var(--accent-primary);
+    border-radius: 6px;
+    padding: 8px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--fs-lg);
+    font-size: var(--fs-sm);
+    font-weight: 700;
     transition: all var(--transition-fast);
+    text-transform: uppercase;
+    letter-spacing: var(--ls-wide);
 }
 
 .theme-toggle:hover {
+    background: var(--accent-primary);
     border-color: var(--accent-primary);
-    color: var(--accent-primary);
+    color: var(--bg-primary);
     box-shadow: var(--shadow-glow-primary);
+    transform: translateY(-2px);
 }
 
 /* Mobile Menu Button */
@@ -216,17 +216,18 @@
 }
 
 .hero-placeholder {
-    width: 100%;
-    max-width: 400px;
-    aspect-ratio: 1;
+    width: 400px;
+    height: 400px;
     background: radial-gradient(circle at 30% 30%, rgba(0, 255, 136, 0.1), transparent),
                 radial-gradient(circle at 70% 70%, rgba(56, 189, 248, 0.1), transparent);
-    border-radius: var(--radius-2xl);
+    border-radius: 50%;                      /* Circular design */
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid var(--border-color);
+    border: 5px solid var(--accent-primary); /* Neon green ring */
     position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+                0 0 40px rgba(0, 255, 136, 0.3);
 }
 
 .hero-placeholder::before {
@@ -234,7 +235,7 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(56, 189, 248, 0.1));
-    border-radius: var(--radius-2xl);
+    border-radius: 50%;                      /* Match circular shape */
     animation: glow 3s ease-in-out infinite;
 }
 
@@ -470,9 +471,41 @@
 /* ===== LIGHT MODE SPECIFIC STYLES ===== */
 
 [data-theme="light"] .navbar {
-    background: rgba(255, 255, 255, 0.85);
-    border-bottom: 1px solid rgba(59, 130, 246, 0.12);
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+    background: rgba(0, 102, 204, 0.95);     /* Blue navbar background */
+    border-bottom: 1px solid rgba(0, 26, 51, 0.2);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .navbar-logo {
+    color: white;
+}
+
+[data-theme="light"] .logo-text,
+[data-theme="light"] .logo-accent {
+    color: white;
+}
+
+/* Yellow navigation buttons like in image */
+[data-theme="light"] .nav-link {
+    background: #ffff00;                     /* Bright yellow */
+    color: #001a33;                          /* Dark blue text */
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    border: 2px solid #ffcc00;
+    transition: all 0.3s ease;
+}
+
+[data-theme="light"] .nav-link:hover,
+[data-theme="light"] .nav-link.active {
+    background: #ffcc00;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .nav-link::after {
+    display: none;                           /* Remove underline effect */
 }
 
 [data-theme="light"] .glass {
@@ -518,77 +551,100 @@
 }
 
 [data-theme="light"] .theme-toggle {
-    border-color: rgba(59, 130, 246, 0.2);
-    background: rgba(59, 130, 246, 0.03);
+    border-color: white;
+    background: #006699;                      /* Darker blue for "Hire me" style */
+    color: white;
 }
 
 [data-theme="light"] .theme-toggle:hover {
-    background: rgba(59, 130, 246, 0.08);
-    border-color: var(--accent-secondary);
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+    background: #004d73;
+    border-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 /* Typography refinements */
-[data-theme="light"] .hero-title {
-    color: #0f172a;
-    font-weight: var(--fw-extrabold);
-}
-
-[data-theme="light"] .typing-text {
-    color: var(--accent-primary);
-    font-weight: var(--fw-bold);
-}
-
-[data-theme="light"] .hero-description {
-    color: #4b5563;
-}
-
 [data-theme="light"] .section-title {
-    color: #0f172a;
+    color: #001a33;                          /* Dark blue */
 }
 
 [data-theme="light"] .section-description {
-    color: #6b7280;
+    color: #003366;                          /* Medium dark blue */
 }
 
 [data-theme="light"] .nav-link {
-    color: #374151;
-    font-weight: var(--fw-semibold);
+    background: #ffff00;                     /* Keep yellow from earlier */
+    color: #001a33;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+    border: 2px solid #ffcc00;
+    transition: all 0.3s ease;
 }
 
 [data-theme="light"] .nav-link:hover,
 [data-theme="light"] .nav-link.active {
-    color: var(--accent-primary);
+    background: #ffcc00;
+    color: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 [data-theme="light"] .footer-title {
-    color: #0f172a;
+    color: #001a33;                          /* Dark blue */
 }
 
 [data-theme="light"] .footer-text {
-    color: #6b7280;
+    color: #003366;                          /* Medium blue */
 }
 
 /* Background enhancements */
 [data-theme="light"] .hero::before {
-    background: radial-gradient(circle at 20% 50%, rgba(5, 150, 105, 0.06), transparent 60%),
-                radial-gradient(circle at 80% 50%, rgba(37, 99, 235, 0.06), transparent 60%);
+    background: none;                        /* Remove gradient overlays for solid blue */
 }
 
-[data-theme="light"] .hero-placeholder {
-    background: radial-gradient(circle at 30% 30%, rgba(5, 150, 105, 0.08), transparent),
-                radial-gradient(circle at 70% 70%, rgba(37, 99, 235, 0.08), transparent);
-    border-color: rgba(37, 99, 235, 0.15);
+[data-theme="light"] .hero-title {
+    color: #001a33;                          /* Dark blue */
+    font-weight: 700;
 }
 
-[data-theme="light"] .hero-placeholder::before {
-    background: linear-gradient(135deg, rgba(5, 150, 105, 0.08), rgba(37, 99, 235, 0.08));
+[data-theme="light"] .hero-title .accent-text {
+    color: #001a33;                          /* Keep same color, no special accent on name */
+}
+
+[data-theme="light"] .typing-text,
+[data-theme="light"] .hero-subtitle {
+    color: #00cc00;                          /* Bright green for subtitle */
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+[data-theme="light"] .hero-description {
+    color: #001a33;                          /* Dark blue for description */
+    font-weight: 400;
 }
 
 /* Section backgrounds */
 [data-theme="light"] .bg-alternate,
 [data-theme="light"] .projects {
-    background: #f8fafc;
+    background: #99ccff;                     /* Medium blue for alternating sections */
+}
+
+/* Profile photo circular style */
+[data-theme="light"] .hero-placeholder {
+    background: white;
+    border: 5px solid #00cc99;               /* Teal/cyan ring around photo */
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="light"] .hero-placeholder::before {
+    display: none;                           /* Remove gradient overlay */
+}
+
+[data-theme="light"] .hero-placeholder svg {
+    display: none;                           /* Hide placeholder SVG */
 }
 
 /* Link styling */
@@ -615,53 +671,53 @@
 /* About card enhancements */
 [data-theme="light"] .about-card {
     background: white;
-    border-color: rgba(37, 99, 235, 0.12);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 26, 51, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="light"] .about-card:hover {
     background: white;
-    border-color: #2563eb;
-    box-shadow: 0 8px 16px rgba(37, 99, 235, 0.15),
-                0 0 0 1px rgba(37, 99, 235, 0.1);
+    border-color: #0000ff;
+    box-shadow: 0 8px 16px rgba(0, 0, 255, 0.2),
+                0 0 0 1px rgba(0, 0, 255, 0.1);
     transform: translateY(-6px);
 }
 
 [data-theme="light"] .about-card h3 {
-    color: #2563eb;
+    color: #0000ff;                          /* Blue for card headings */
 }
 
 [data-theme="light"] .card-main {
-    color: #111827;
+    color: #001a33;                          /* Dark blue */
 }
 
 [data-theme="light"] .card-secondary {
-    color: #6b7280;
+    color: #004080;                          /* Medium blue */
 }
 
 [data-theme="light"] .interests-list li::before,
 [data-theme="light"] .strengths-list li::before {
-    color: #059669;
+    color: #00cc00;                          /* Green bullets */
 }
 
 /* Scroll indicator */
 [data-theme="light"] .scroll-indicator {
-    color: #6b7280;
+    color: #003366;                          /* Medium dark blue */
 }
 
 /* Back to top button */
 [data-theme="light"] .back-to-top {
-    background: white;
-    color: #2563eb;
-    border: 2px solid rgba(37, 99, 235, 0.2);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background: #0000ff;
+    color: white;
+    border: 2px solid #0000cc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 [data-theme="light"] .back-to-top:hover {
-    background: #2563eb;
+    background: #0000cc;
     color: white;
-    border-color: #2563eb;
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+    border-color: #0000cc;
+    box-shadow: 0 6px 16px rgba(0, 0, 255, 0.3);
 }
 
 /* ===== RESPONSIVE HIDDEN ELEMENTS ===== */

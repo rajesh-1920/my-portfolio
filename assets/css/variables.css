@@ -175,33 +175,33 @@
     /* Accent Colors - Yellow primary, blue secondary from image */
     --accent-primary: #00cc00;       /* Bright green for text accents */
     --accent-secondary: #0000ff;     /* Bright blue for interactive elements */
-    --accent-tertiary: #ffcc00;      /* Yellow for buttons */
+    --accent-tertiary: #ffff00;      /* Bright yellow for buttons */
     
-    /* Status Colors - Light mode optimized */
-    --success: #047857;              /* Deeper emerald */
-    --warning: #c2410c;              /* Deeper orange */
-    --error: #dc2626;                /* Vibrant red */
-    --info: #0369a1;                 /* Deeper sky blue */
+    /* Status Colors - Matching light blue theme */
+    --success: #00aa00;              /* Bright green */
+    --warning: #ff9900;              /* Orange */
+    --error: #ff0000;                /* Red */
+    --info: #0066cc;                 /* Blue */
     
-    /* Border Colors - Subtle with color tint */
-    --border-color: rgba(59, 130, 246, 0.12);      /* Subtle blue tint */
-    --border-light: rgba(59, 130, 246, 0.06);      /* Very subtle blue */
-    --overlay: rgba(255, 255, 255, 0.85);          /* Semi-transparent white */
+    /* Border Colors - Darker for visibility on light blue */
+    --border-color: rgba(0, 26, 51, 0.2);          /* Dark blue tint */
+    --border-light: rgba(0, 26, 51, 0.1);          /* Subtle dark blue */
+    --overlay: rgba(179, 217, 255, 0.9);           /* Light blue overlay */
     
-    /* Refined Shadows - Soft, natural depth */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -1px rgba(0, 0, 0, 0.04);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
-    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.20);
+    /* Refined Shadows - Stronger for light background */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.15), 0 2px 4px -1px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.08);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.08);
+    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     
-    /* Accent Glow Shadows - Subtle colored glows */
-    --shadow-glow-primary: 0 0 20px rgba(5, 150, 105, 0.2);
-    --shadow-glow-secondary: 0 0 20px rgba(37, 99, 235, 0.2);
-    --shadow-glow-strong: 0 0 30px rgba(5, 150, 105, 0.3);
+    /* Accent Glow Shadows - For blue theme */
+    --shadow-glow-primary: 0 0 20px rgba(0, 0, 255, 0.3);
+    --shadow-glow-secondary: 0 0 20px rgba(255, 255, 0, 0.3);
+    --shadow-glow-strong: 0 0 30px rgba(0, 0, 255, 0.4);
     
     /* Gradient overlays */
-    --gradient-primary: linear-gradient(135deg, #059669, #10b981);
-    --gradient-secondary: linear-gradient(135deg, #2563eb, #1d4ed8);
-    --gradient-accent: linear-gradient(135deg, rgba(5, 150, 105, 0.1), rgba(37, 99, 235, 0.1));
+    --gradient-primary: linear-gradient(135deg, #0000ff, #0066ff);
+    --gradient-secondary: linear-gradient(135deg, #ffff00, #ffcc00);
+    --gradient-accent: linear-gradient(135deg, rgba(0, 0, 255, 0.1), rgba(255, 255, 0, 0.1));
 }

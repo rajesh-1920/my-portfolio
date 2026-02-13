@@ -43,10 +43,10 @@
 
 .form-input {
     width: 100%;
-    padding: var(--space-3) var(--space-4);
+    padding: 14px 20px;                      /* More padding for consistency */
     background: rgba(226, 232, 240, 0.05);
     border: 2px solid var(--border-color);
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xl);         /* More rounded for modern look */
     color: var(--text-primary);
     font-size: var(--fs-sm);
     transition: all var(--transition-base);
@@ -213,8 +213,8 @@
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
+    width: 48px;                             /* Slightly larger for better visibility */
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -229,7 +229,8 @@
     border-color: var(--accent-primary);
     color: var(--accent-primary);
     background: rgba(0, 255, 136, 0.1);
-    transform: scale(1.2);
+    transform: translateY(-4px) scale(1.1);  /* Enhanced hover effect */
+    box-shadow: 0 8px 20px rgba(0, 255, 136, 0.3);
 }
 
 .social-link svg {
@@ -296,113 +297,56 @@
 /* Typography improvements */
 [data-theme="light"] .contact-title,
 [data-theme="light"] .card-title {
-    color: #0f172a;
-    font-weight: var(--fw-bold);
+    color: #001a33;                          /* Dark blue */
+    font-weight: 700;
 }
 
 [data-theme="light"] .contact-text,
 [data-theme="light"] .card-text {
-    color: #4b5563;
+    color: #003366;                          /* Medium dark blue */
 }
 
 [data-theme="light"] .form-label {
-    color: #374151;
-    font-weight: var(--fw-medium);
+    color: #001a33;                          /* Dark blue */
+    font-weight: 600;
 }
 
 [data-theme="light"] .form-group input::placeholder,
 [data-theme="light"] .form-group textarea::placeholder {
-    color: #9ca3af;
+    color: #66b3ff;                          /* Light blue */
 }
 
 [data-theme="light"] .error-message {
-    color: #dc2626;
-    font-weight: var(--fw-medium);
+    color: #ff0000;
+    font-weight: 600;
 }
 
 [data-theme="light"] .success-message {
-    color: #047857;
-    font-weight: var(--fw-medium);
-}
-
-/* Enhanced form inputs */
-[data-theme="light"] .form-input,
-[data-theme="light"] .form-textarea {
-    background: white;
-    border-color: rgba(37, 99, 235, 0.2);
-    color: #111827;
-}
-
-[data-theme="light"] .form-input:focus,
-[data-theme="light"] .form-textarea:focus {
-    background: white;
-    border-color: #2563eb;
-    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.08),
-                0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-[data-theme="light"] .form-input.error {
-    border-color: #dc2626;
-    background: rgba(220, 38, 38, 0.03);
-}
-
-[data-theme="light"] .form-input.error:focus {
-    box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.08);
-}
-
-/* Form messages */
-[data-theme="light"] .form-message.success {
-    background: rgba(5, 150, 105, 0.08);
-    border-color: rgba(5, 150, 105, 0.3);
-    color: #047857;
-}
-
-[data-theme="light"] .form-message.error {
-    background: rgba(220, 38, 38, 0.08);
-    border-color: rgba(220, 38, 38, 0.3);
-    color: #dc2626;
-}
-
-/* Submit button */
-[data-theme="light"] .btn-submit {
-    background: linear-gradient(135deg, #2563eb, #1d4ed8);
-    color: white;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
-}
-
-[data-theme="light"] .btn-submit:hover {
-    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
-    transform: translateY(-2px);
-}
-
-[data-theme="light"] .btn-submit:disabled {
-    background: #e5e7eb;
-    color: #9ca3af;
-    box-shadow: none;
+    color: #00aa00;
+    font-weight: 600;
 }
 
 /* Contact card icon enhancements */
 [data-theme="light"] .contact-icon {
-    color: #2563eb;
+    color: #0000ff;                          /* Blue icons */
 }
 
 [data-theme="light"] .contact-card:hover .contact-icon {
-    transform: scale(1.1) rotate(5deg);
-    color: #1d4ed8;
+    transform: scale(1.05) rotate(3deg);
+    color: #0066ff;
 }
 
 /* Social links */
 [data-theme="light"] .social-link {
-    background: white;
-    border-color: rgba(37, 99, 235, 0.15);
-    color: #2563eb;
+    background: white;\n    border-color: rgba(0, 26, 51, 0.2);
+    color: #0000ff;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-theme="light"] .social-link:hover {
-    background: #2563eb;
-    border-color: #2563eb;
+    background: #0000ff;
+    border-color: #0000ff;
     color: white;
-    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 6px 16px rgba(0, 0, 255, 0.3);
     transform: translateY(-3px) scale(1.05);
 }

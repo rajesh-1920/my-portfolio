@@ -233,9 +233,9 @@ textarea {
     align-items: center;
     justify-content: center;
     gap: var(--space-2);
-    padding: var(--space-3) var(--space-6);
-    border-radius: var(--radius-lg);
-    font-weight: var(--fw-semibold);
+    padding: 12px 28px;                      /* More padding for pill shape */
+    border-radius: var(--radius-full);       /* Full rounded pill shape */
+    font-weight: var(--fw-bold);             /* Bold for emphasis */
     font-size: var(--fs-sm);
     letter-spacing: var(--ls-wide);
     text-transform: uppercase;
@@ -256,7 +256,7 @@ textarea {
 
 .btn-primary:hover {
     box-shadow: var(--shadow-glow-strong);
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.02);  /* More prominent hover effect */
 }
 
 .btn-primary:active {
@@ -273,6 +273,7 @@ textarea {
 .btn-outline:hover {
     background: rgba(0, 255, 136, 0.1);
     box-shadow: var(--shadow-glow-primary);
+    transform: translateY(-2px);              /* Add hover movement */
 }
 
 /* Button Link */
@@ -604,20 +605,20 @@ textarea {
 /* ===== LIGHT MODE SPECIFIC STYLES ===== */
 
 [data-theme="light"] ::-webkit-scrollbar-track {
-    background: #eef2f7;
+    background: #99ccff;                     /* Medium blue */
 }
 
 [data-theme="light"] ::-webkit-scrollbar-thumb {
-    background: rgba(37, 99, 235, 0.4);
+    background: rgba(0, 0, 255, 0.5);        /* Blue scrollbar */
 }
 
 [data-theme="light"] ::-webkit-scrollbar-thumb:hover {
-    background: rgba(37, 99, 235, 0.6);
+    background: rgba(0, 0, 255, 0.7);
 }
 
 [data-theme="light"] ::selection {
-    background: rgba(5, 150, 105, 0.2);
-    color: #111827;
+    background: rgba(0, 0, 255, 0.3);        /* Blue selection */
+    color: white;
 }
 
 /* Enhanced typography for light mode */
@@ -627,52 +628,56 @@ textarea {
 [data-theme="light"] h4,
 [data-theme="light"] h5,
 [data-theme="light"] h6 {
-    color: #0f172a;
-    font-weight: var(--fw-extrabold);
+    color: #001a33;                          /* Dark blue for headings */
+    font-weight: 700;
 }
 
 [data-theme="light"] p {
-    color: var(--text-secondary);
+    color: #003366;                          /* Medium dark blue for text */
 }
 
 [data-theme="light"] .text-muted {
-    color: #9ca3af;
+    color: #004080;                          /* Slightly lighter blue */
 }
 
 [data-theme="light"] a:hover {
-    color: #047857;
+    color: #0000ff;                          /* Bright blue */
 }
 
 [data-theme="light"] .skip-link {
-    background: var(--accent-primary);
+    background: #0000ff;
     color: white;
 }
 
 /* Button enhancements for light mode */
 [data-theme="light"] .btn-primary {
-    background: linear-gradient(135deg, #059669, #047857);
-    border-color: #059669;
+    background: #0000ff;                     /* Blue button like in image */
+    border-color: #0000cc;
     color: white;
-    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25),
-                0 2px 4px rgba(0, 0, 0, 0.08);
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(0, 0, 255, 0.3),
+                0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 [data-theme="light"] .btn-primary:hover {
-    box-shadow: 0 8px 20px rgba(5, 150, 105, 0.35),
-                0 4px 8px rgba(0, 0, 0, 0.12);
+    background: #0000cc;
+    box-shadow: 0 6px 16px rgba(0, 0, 255, 0.4),
+                0 4px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(-2px);
 }
 
 [data-theme="light"] .btn-outline {
-    border-color: #2563eb;
-    color: #2563eb;
-    background: rgba(37, 99, 235, 0.03);
+    border-color: #0000ff;
+    color: white;
+    background: #0000ff;                    /* Blue button */
+    font-weight: 700;
 }
 
 [data-theme="light"] .btn-outline:hover {
-    background: rgba(37, 99, 235, 0.08);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1),
-                0 4px 12px rgba(37, 99, 235, 0.15);
+    background: #0000cc;
+    border-color: #0000cc;
+    box-shadow: 0 0 0 3px rgba(0, 0, 255, 0.2),
+                0 4px 12px rgba(0, 0, 255, 0.3);
 }
 
 [data-theme="light"] .btn-link {
