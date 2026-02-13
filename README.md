@@ -61,6 +61,7 @@ my-portfolio/
 ├── database/ (Future development - Phase 2)
 └── .gitignore
 ```
+Phase 1 focuses on implementing the frontend of the portfolio website using HTML, CSS, and JavaScript.
 
 ## 🎨 Design System
 
