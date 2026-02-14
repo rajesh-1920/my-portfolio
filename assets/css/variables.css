@@ -267,5 +267,5 @@
       rgba(255, 255, 0, 0.1));
 
   /* Section backgrounds */
-  --section-bg: linear-gradient(rgb(187, 223, 253),rgb(250, 250, 250));
+  --section-bg: linear-gradient(rgb(187, 223, 253), rgb(250, 250, 250));
 }

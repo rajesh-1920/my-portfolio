@@ -31,11 +31,9 @@
   content: "";
   width: 4px;
   height: 24px;
-  background: linear-gradient(
-    180deg,
-    var(--accent-primary),
-    var(--accent-secondary)
-  );
+  background: linear-gradient(180deg,
+      var(--accent-primary),
+      var(--accent-secondary));
   border-radius: var(--radius-full);
 }
 
@@ -97,11 +95,9 @@
 
 .skill-progress {
   height: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--accent-primary),
-    var(--accent-secondary)
-  );
+  background: linear-gradient(90deg,
+      var(--accent-primary),
+      var(--accent-secondary));
   border-radius: var(--radius-full);
   animation: slideRight 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
   box-shadow: var(--shadow-glow-primary);
@@ -112,12 +108,10 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent);
   animation: shimmer 2s infinite;
 }
 
@@ -125,6 +119,7 @@
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(100%);
   }
@@ -143,20 +138,20 @@
 }
 
 [data-theme="light"] .skill-bar {
-  background: rgba(153, 204, 255, 0.4); /* Light blue background */
+  background: rgba(153, 204, 255, 0.4);
+  /* Light blue background */
 }
 
 [data-theme="light"] .skill-progress {
-  background: linear-gradient(90deg, #0000ff, #0066ff); /* Blue gradient */
+  background: linear-gradient(90deg, #0000ff, #0066ff);
+  /* Blue gradient */
 }
 
 [data-theme="light"] .skill-progress::after {
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.4),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.4),
+      transparent);
 }
 
 /* Typography improvements */

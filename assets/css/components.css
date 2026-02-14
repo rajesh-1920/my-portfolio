@@ -541,7 +541,7 @@
 }
 
 [data-theme="light"] .navbar-logo img {
-  border-color: #00cc99;
+  border-color: #014131;
 }
 
 [data-theme="light"] .logo-text {
@@ -550,7 +550,8 @@
 }
 
 [data-theme="light"] .logo-accent {
-  display: none;
+  display: inline-block;
+  color: rgb(2, 7, 54);
 }
 
 /* Yellow navigation buttons like in image */
