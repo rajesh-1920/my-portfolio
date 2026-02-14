@@ -34,7 +34,7 @@
   <nav class="navbar" aria-label="Main navigation">
     <div class="navbar-container">
       <a href="#" class="navbar-logo">
-        <img class="logo-image" src="assets/images/profile-picture.jpg" alt="Rajesh Biswas" />
+        <img src="assets/images/logo-picture.jpg" alt="Rajesh Biswas - Logo" />
         <span class="logo-text">Rajesh</span>
         <span class="logo-accent">.dev</span>
       </a>
@@ -49,17 +49,51 @@
         <a href="#contact" class="nav-link" data-scroll>Contact</a>
         <a href="#contact" class="hire-me-btn" data-scroll>Hire me</a>
       </div>
-      <!-- .nav-logo end -->
 
-      <nav>
-        <div id="nav-left"></div>
-        <div class="navbar">
-          <a href="./index.html">Home</a>
-          <a href="./education/education.html">Services</a>
-          <a href="./projects/projects.html">Projects</a>
-          <a href="https://leetcode.com/u/rajesh_1920/" target="_blank">CP Profile</a>
-          <a href="./experiences/experiences.html">Experience</a>
-          <a href="#">About</a>
+      <!-- Dark Mode Toggle -->
+      <button class="theme-toggle" aria-label="Toggle dark/light mode" id="theme-btn">
+        <span class="theme-icon">🌙</span>
+      </button>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero section-padding">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Hi, I'm <span class="accent-text">Rajesh Biswas</span>
+          </h1>
+          <div class="typing-container">
+            <p class="hero-subtitle typing-text">
+              Competitive Programmer | Problem Solver | Full Stack Developer
+            </p>
+          </div>
+          <p class="hero-description">
+            A Computer Science student passionate about solving complex
+            problems through code. I specialize in competitive programming,
+            machine learning, and building scalable web applications.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary" data-scroll>View Projects</a>
+            <a href="#" class="btn btn-outline" download>Download CV</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="hero-placeholder">
+            <img src="assets/images/profile-picture.jpg" alt="Rajesh Biswas - Profile Picture"
+              class="hero-profile-img" />
+          </div>
+          <h2>rajesh_1920</h2>
         </div>
       </div>
       <div class="scroll-indicator">

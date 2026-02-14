@@ -273,7 +273,7 @@
 [data-theme="light"] .contact-card:hover {
   background: rgba(255, 255, 255, 1);
   border-color: var(--accent-secondary);
-  box-shadow: 
+  box-shadow:
     0 10px 30px -5px rgba(0, 102, 204, 0.2),
     0 0 20px rgba(0, 102, 204, 0.15);
   transform: translateY(-4px);
@@ -332,7 +332,7 @@
 }
 
 [data-theme="light"] .form-input.error:focus {
-  box-shadow: 
+  box-shadow:
     0 0 0 4px rgba(220, 38, 38, 0.12),
     0 2px 8px rgba(220, 38, 38, 0.1);
 }
@@ -362,7 +362,7 @@
   background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
   color: white;
   font-weight: var(--fw-bold);
-  box-shadow: 
+  box-shadow:
     0 4px 14px rgba(0, 102, 204, 0.3),
     0 2px 6px rgba(0, 102, 204, 0.2);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -370,7 +370,7 @@
 
 [data-theme="light"] .btn-submit:hover {
   background: linear-gradient(135deg, #0052a3 0%, #003d7a 100%);
-  box-shadow: 
+  box-shadow:
     0 8px 24px rgba(0, 102, 204, 0.4),
     0 4px 12px rgba(0, 102, 204, 0.25);
   transform: translateY(-2px);
@@ -378,7 +378,7 @@
 
 [data-theme="light"] .btn-submit:active {
   transform: translateY(0);
-  box-shadow: 
+  box-shadow:
     0 4px 14px rgba(0, 102, 204, 0.3),
     0 2px 6px rgba(0, 102, 204, 0.2);
 }

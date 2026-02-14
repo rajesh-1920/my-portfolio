@@ -17,13 +17,16 @@
 }
 
 .filter-btn {
-  padding: 10px 24px; /* More padding for pill shape */
+  padding: 10px 24px;
+  /* More padding for pill shape */
   border: 2px solid var(--border-color);
   background: transparent;
   color: var(--text-secondary);
-  border-radius: var(--radius-full); /* Full pill shape */
+  border-radius: var(--radius-full);
+  /* Full pill shape */
   font-size: var(--fs-sm);
-  font-weight: var(--fw-bold); /* Bold for consistency */
+  font-weight: var(--fw-bold);
+  /* Bold for consistency */
   letter-spacing: var(--ls-wide);
   text-transform: uppercase;
   cursor: pointer;
@@ -33,20 +36,20 @@
 .filter-btn:hover {
   border-color: var(--accent-primary);
   color: var(--accent-primary);
-  transform: translateY(-2px); /* Add hover movement */
+  transform: translateY(-2px);
+  /* Add hover movement */
   box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
 }
 
 .filter-btn.active {
-  background: linear-gradient(
-    135deg,
-    var(--accent-primary),
-    var(--accent-secondary)
-  );
+  background: linear-gradient(135deg,
+      var(--accent-primary),
+      var(--accent-secondary));
   color: var(--bg-primary);
   border-color: var(--accent-primary);
   box-shadow: var(--shadow-glow-primary);
-  transform: translateY(-2px) scale(1.05); /* Active state emphasis */
+  transform: translateY(-2px) scale(1.05);
+  /* Active state emphasis */
 }
 
 /* Projects Grid */
@@ -88,11 +91,9 @@
 .project-image {
   width: 100%;
   aspect-ratio: 16 / 10;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 255, 136, 0.05),
-    rgba(56, 189, 248, 0.05)
-  );
+  background: linear-gradient(135deg,
+      rgba(0, 255, 136, 0.05),
+      rgba(56, 189, 248, 0.05));
   border-bottom: 1px solid var(--border-color);
   display: flex;
   align-items: center;
@@ -242,12 +243,10 @@
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(
-    90deg,
-    var(--accent-primary),
-    var(--accent-secondary),
-    transparent
-  );
+  background: linear-gradient(90deg,
+      var(--accent-primary),
+      var(--accent-secondary),
+      transparent);
   opacity: 0;
   transition: opacity var(--transition-base);
   border-radius: var(--radius-xl) var(--radius-xl) 0 0;
@@ -369,11 +368,9 @@
 }
 
 [data-theme="light"] .project-image::after {
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 255, 0.1),
-    rgba(0, 204, 0, 0.1)
-  );
+  background: linear-gradient(135deg,
+      rgba(0, 0, 255, 0.1),
+      rgba(0, 204, 0, 0.1));
 }
 
 [data-theme="light"] .project-card:hover .project-image::before {
@@ -426,11 +423,9 @@
 
 /* CP card enhancements */
 [data-theme="light"] .cp-card::before {
-  background: linear-gradient(
-    135deg,
-    rgba(37, 99, 235, 0.03),
-    rgba(5, 150, 105, 0.03)
-  );
+  background: linear-gradient(135deg,
+      rgba(37, 99, 235, 0.03),
+      rgba(5, 150, 105, 0.03));
 }
 
 [data-theme="light"] .cp-stat {
@@ -478,16 +473,19 @@
 /* Typography improvements */
 [data-theme="light"] .project-title,
 [data-theme="light"] .cp-platform {
-  color: #001a33; /* Dark blue */
+  color: #001a33;
+  /* Dark blue */
   font-weight: 700;
 }
 
 [data-theme="light"] .project-description {
-  color: #003366; /* Medium dark blue */
+  color: #003366;
+  /* Medium dark blue */
 }
 
 [data-theme="light"] .filter-btn {
-  background: #ffff00; /* Yellow filter buttons */
+  background: #ffff00;
+  /* Yellow filter buttons */
   color: #001a33;
   border: 2px solid #ffcc00;
   font-weight: 700;
@@ -502,7 +500,8 @@
 }
 
 [data-theme="light"] .filter-btn.active {
-  background: #0000ff; /* Blue when active */
+  background: #0000ff;
+  /* Blue when active */
   border-color: #0000ff;
   color: white;
   box-shadow:
@@ -517,6 +516,7 @@
   border-color: rgba(0, 26, 51, 0.2);
   color: #0000ff;
 }
+
 \n\n[data-theme="light"] .project-link:hover,
 [data-theme="light"] .project-links .btn-link:hover {
   background: rgba(0, 0, 255, 0.1);
