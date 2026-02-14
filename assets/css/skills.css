@@ -161,17 +161,17 @@
 
 /* Typography improvements */
 [data-theme="light"] .category-title {
-  color: #001a33; /* Dark blue */
+  color: var(--text-primary);
   font-weight: 700;
 }
 
 [data-theme="light"] .skill-name {
-  color: #001a33; /* Dark blue */
+  color: var(--text-secondary);
   font-weight: 600;
 }
 
 [data-theme="light"] .skill-percentage {
-  color: #0000ff; /* Blue */
+  color: var(--link-color);
   font-weight: 700;
 }
 

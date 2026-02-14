@@ -169,6 +169,10 @@ textarea {
   padding-bottom: var(--section-py);
 }
 
+[data-theme="light"] .section-padding {
+  background: var(--section-bg);
+}
+
 /* Background Alternate */
 .bg-alternate {
   background-color: var(--bg-secondary);

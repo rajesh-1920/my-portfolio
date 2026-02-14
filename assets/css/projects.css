@@ -383,25 +383,25 @@
 [data-theme="light"] .tech-tag {
   background: rgba(0, 0, 255, 0.1);
   border-color: rgba(0, 0, 255, 0.3);
-  color: #0000ff;
+  color: var(--link-color);
 }
 
 [data-theme="light"] .tech-tag.web {
   background: rgba(0, 204, 0, 0.1);
   border-color: rgba(0, 204, 0, 0.3);
-  color: #00aa00;
+  color: var(--accent-primary);
 }
 
 [data-theme="light"] .tech-tag.ml {
   background: rgba(0, 0, 255, 0.1);
   border-color: rgba(0, 0, 255, 0.3);
-  color: #0000ff;
+  color: var(--link-color);
 }
 
 [data-theme="light"] .tech-tag.tools {
   background: rgba(255, 153, 0, 0.1);
   border-color: rgba(255, 153, 0, 0.3);
-  color: #ff9900;
+  color: var(--accent-tertiary);
 }
 
 /* Tech badge refinements */
